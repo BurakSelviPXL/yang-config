@@ -1,6 +1,6 @@
 <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
 
-  <hostname>Router-Automation</hostname>
+  <hostname>TEST-AUTO</hostname>
 
   <interface>
     <GigabitEthernet>
