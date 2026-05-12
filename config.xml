@@ -1,48 +1,49 @@
-<config>
-  <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+<native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
 
-    <hostname>YANG-AUTO</hostname>
+  <hostname>Router-Automation</hostname>
 
-    <interface>
-      <GigabitEthernet>
-        <name>1</name>
-        <description>IFACE1</description>
-        <ip>
-          <address>
-            <primary>
-              <address>192.168.10.1</address>
-              <mask>255.255.255.0</mask>
-            </primary>
-          </address>
-        </ip>
-        <no_shutdown/>
-      </GigabitEthernet>
+  <interface>
+    <GigabitEthernet>
+      <name>1</name>
+      <ip>
+        <address>
+          <primary>
+            <address>192.168.1.10</address>
+            <mask>255.255.255.0</mask>
+          </primary>
+        </address>
+      </ip>
+      <no_shutdown/>
+    </GigabitEthernet>
 
-      <GigabitEthernet>
-        <name>2</name>
-        <description>IFACE2</description>
-        <ip>
-          <address>
-            <primary>
-              <address>192.168.20.1</address>
-              <mask>255.255.255.0</mask>
-            </primary>
-          </address>
-        </ip>
-        <no_shutdown/>
-      </GigabitEthernet>
-    </interface>
+    <GigabitEthernet>
+      <name>2</name>
+      <ip>
+        <address>
+          <primary>
+            <address>192.168.2.1</address>
+            <mask>255.255.255.0</mask>
+          </primary>
+        </address>
+      </ip>
+      <no_shutdown/>
+    </GigabitEthernet>
+  </interface>
 
-    <router>
-      <ospf>
-        <process-id>1</process-id>
-        <network>
-          <ip>192.168.10.0</ip>
-          <wildcard>0.0.0.255</wildcard>
-          <area>0</area>
-        </network>
-      </ospf>
-    </router>
+  <router>
+    <ospf>
+      <id>1</id>
+      <network>
+        <ip>192.168.1.0</ip>
+        <mask>0.0.0.255</mask>
+        <area>0</area>
+      </network>
+      <network>
+        <ip>192.168.2.0</ip>
+        <mask>0.0.0.255</mask>
+        <area>0</area>
+      </network>
+    </ospf>
+  </router>
 
-  </native>
-</config>
+</native>
