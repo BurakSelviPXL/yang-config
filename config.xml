@@ -14,7 +14,6 @@
           </primary>
         </address>
       </ip>
-      <no_shutdown/>
     </GigabitEthernet>
 
     <GigabitEthernet>
@@ -28,23 +27,27 @@
           </primary>
         </address>
       </ip>
-      <no_shutdown/>
     </GigabitEthernet>
   </interface>
 
   <router>
     <ospf>
-      <process-id>1</process-id>
-      <network>
-        <ip>192.168.1.0</ip>
-        <wildcard>0.0.0.255</wildcard>
-        <area>0</area>
-      </network>
-      <network>
-        <ip>192.168.2.0</ip>
-        <wildcard>0.0.0.255</wildcard>
-        <area>0</area>
-      </network>
+      <ospf>
+        <process-id>1</process-id>
+
+        <network>
+          <ip>192.168.1.0</ip>
+          <wildcard>0.0.0.255</wildcard>
+          <area>0</area>
+        </network>
+
+        <network>
+          <ip>192.168.2.0</ip>
+          <wildcard>0.0.0.255</wildcard>
+          <area>0</area>
+        </network>
+
+      </ospf>
     </ospf>
   </router>
 
