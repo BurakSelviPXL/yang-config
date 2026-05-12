@@ -2,4 +2,19 @@
 
   <hostname>TEST123</hostname>
 
+  <interface>
+    <GigabitEthernet>
+      <name>1</name>
+      <description>IFACE1</description>
+      <ip>
+        <address>
+          <primary>
+            <address>192.168.1.10</address>
+            <mask>255.255.255.0</mask>
+          </primary>
+        </address>
+      </ip>
+    </GigabitEthernet>
+  </interface>
+
 </native>
