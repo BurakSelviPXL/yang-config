@@ -15,8 +15,6 @@
         </address>
       </ip>
 
-      <shutdown>false</shutdown>
-
     </GigabitEthernet>
   </interface>
 
