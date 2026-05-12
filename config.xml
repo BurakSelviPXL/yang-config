@@ -5,7 +5,6 @@
   <interface>
     <GigabitEthernet>
       <name>1</name>
-      <description>IFACE1</description>
       <ip>
         <address>
           <primary>
@@ -14,6 +13,7 @@
           </primary>
         </address>
       </ip>
+      <shutdown>false</shutdown>
     </GigabitEthernet>
   </interface>
 
