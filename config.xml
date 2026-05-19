@@ -13,7 +13,6 @@
           </primary>
         </address>
       </ip>
-      <no-switchport/>
     </GigabitEthernet>
 
     <GigabitEthernet>
