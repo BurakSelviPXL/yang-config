@@ -25,7 +25,6 @@
           </primary>
         </address>
       </ip>
-      <no-switchport/>
     </GigabitEthernet>
   </interface>
 
