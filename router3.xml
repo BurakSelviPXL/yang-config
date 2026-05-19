@@ -9,7 +9,7 @@
         <address>
           <primary>
             <address>192.168.50.1</address>
-            <mask>255.255.255.0</mask>
+            <mask>255.255.254.0</mask>
           </primary>
         </address>
       </ip>
